@@ -3,9 +3,10 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true, // Adicione esta linha
+  templateUrl: '../app.component.html',
+  styleUrls: ['./app.component.css'],
+  imports: [RouterOutlet] // Mantenha esta linha
 })
 export class AppComponent {
   title = 'desafio-ford-angular';
